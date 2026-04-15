@@ -12,6 +12,18 @@
   @apply outline-none ring-2 ring-pink-500 ring-opacity-50;
 }
 
+@font-face {
+  font-family: "Roboto Mono Custom";
+  src: url("/fonts/static/Roboto-Bold.ttf") format("truetype");
+  font-weight: 100 700; /* variável */
+  font-display: swap;
+}
+
+.roboto-mono-italic {
+  font-family: "Roboto Mono Custom", monospace;
+  font-weight: bold;
+}
+
 html {
   height: 100%;
   box-sizing: border-box;
@@ -28,7 +40,7 @@ body {
     'Helvetica', sans-serif;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
-  @apply text-white bg-zinc-800 antialiased;
+  @apply bg-black/80 text-white antialiased;
 }
 
 body {

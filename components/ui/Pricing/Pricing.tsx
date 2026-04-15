@@ -84,6 +84,9 @@ export default function Pricing({ user, products, subscription }: Props) {
   if (!products.length) {
     return (
       <section className="bg-black">
+        <pre>
+          {JSON.stringify(products)}
+        </pre>
         <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
           <div className="sm:flex sm:flex-col sm:align-center"></div>
           <p className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
@@ -196,7 +199,7 @@ export default function Pricing({ user, products, subscription }: Props) {
               );
             })}
           </div>
-          <LogoCloud />
+          {/* <LogoCloud /> */}
         </div>
       </section>
     );
